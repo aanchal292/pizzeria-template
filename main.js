@@ -19,14 +19,11 @@ var item=document.getElementById("add_item").value;
         for(var i=0;i<menu_list_array.length;i++){
             htmldata=htmldata+imgtags+ menu_list_array[i]+'<br>';
         }
-         document.getElementById("       ").innerHTML = htmldata;		
-         //give the appropriate id name as display_addedmenu
-
-}
+         document.getElementById("display_addedmenu").innerHTML = htmldata;		
+      }
 
 function add_top(){
-    var item=document.getElementById("     ").value;
-    //give the appropriate id name as add_menu
+    var item=document.getElementById("add_item").value;
     menu_list_array.push(item);
 	add_item();
 }
